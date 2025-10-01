@@ -27,3 +27,12 @@ These are objects that could become the database tables
 - Title 
 - Summary 
 - Total Results 
+
+# Install 
+##  Setting up this script 
+No need to apply for an API key to use arXiv API, just install the requests library
+
+- Ensure correct version of Ruby install (see `.ruby-version` for `rbenv`)
+- Run `bundle install` to install dependencies
+
+## Running this script 
