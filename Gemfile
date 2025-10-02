@@ -10,3 +10,5 @@ gem 'rubocop'
 
 # Debug 
 gem 'pry'
+
+gem 'nokogiri'
