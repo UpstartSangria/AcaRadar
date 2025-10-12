@@ -804,4 +804,64 @@ http_interactions:
           </entry>
         </feed>
   recorded_at: Sun, 12 Oct 2025 07:21:40 GMT
+- request:
+    method: get
+    uri: https://export.arxiv.org/api/search_query=all:Reinforcement+Learning+AND+submittedDate:%5B201010020000+TO+202510020000%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=ascending
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - application/atom+xml
+      User-Agent:
+      - Sangria/1.0 (mailto:sharonlin@iss.nthu.edu.tw)
+      Connection:
+      - close
+      Host:
+      - export.arxiv.org
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '126'
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 12 Oct 2025 16:22:51 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-nrt-rjtt7900030-NRT
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1760286171.532799,VS0,VE599
+      Strict-Transport-Security:
+      - max-age=300
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="UTF-8">
+            <title>503</title>
+          </head>
+          <body>
+            503
+          </body>
+        </html>
+  recorded_at: Sun, 12 Oct 2025 16:22:52 GMT
 recorded_with: VCR 6.3.1
