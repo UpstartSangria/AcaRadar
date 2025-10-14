@@ -1,0 +1,867 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://export.arxiv.org/api/query?max_results=50&search_query=all:Reinforcement%20Learning%20AND%20submittedDate:%5B201010020000%20TO%20202510020000%5D&sortBy=submittedDate&sortOrder=ascending&start=0
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - application/atom+xml
+      User-Agent:
+      - Sangria/1.0 (mailto:sharonlin@iss.nthu.edu.tw)
+      Connection:
+      - close
+      Host:
+      - export.arxiv.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '45743'
+      Content-Type:
+      - application/atom+xml; charset=UTF-8
+      Via:
+      - 1.1 varnish, 1.1 varnish, 1.1 varnish
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Apache
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '1039'
+      Date:
+      - Sun, 12 Oct 2025 07:21:39 GMT
+      X-Served-By:
+      - cache-lga21956-LGA, cache-lga21956-LGA, cache-sin-wsss1830088-SIN
+      X-Cache:
+      - MISS, MISS, HIT
+      X-Cache-Hits:
+      - 0, 0, 0
+      X-Timer:
+      - S1760253699.007934,VS0,VE1
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=300
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <link href="http://arxiv.org/api/query?search_query%3Dall%3AReinforcement%20Learning%20AND%20submittedDate%3A%5B201010020000%20TO%20202510020000%5D%26id_list%3D%26start%3D0%26max_results%3D50" rel="self" type="application/atom+xml"/>
+          <title type="html">ArXiv Query: search_query=all:Reinforcement Learning AND submittedDate:[201010020000 TO 202510020000]&amp;id_list=&amp;start=0&amp;max_results=50</title>
+          <id>http://arxiv.org/api/yAulGed6EV37pWmxxPEh+oI1opc</id>
+          <updated>2025-10-12T00:00:00-04:00</updated>
+          <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410910</opensearch:totalResults>
+          <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+          <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">50</opensearch:itemsPerPage>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0287v1</id>
+            <updated>2010-10-02T03:57:46Z</updated>
+            <published>2010-10-02T03:57:46Z</published>
+            <title>Queue-Aware Distributive Resource Control for Delay-Sensitive Two-Hop
+          MIMO Cooperative Systems</title>
+            <summary>  In this paper, we consider a queue-aware distributive resource control
+        algorithm for two-hop MIMO cooperative systems. We shall illustrate that relay
+        buffering is an effective way to reduce the intrinsic half-duplex penalty in
+        cooperative systems. The complex interactions of the queues at the source node
+        and the relays are modeled as an average-cost infinite horizon Markov Decision
+        Process (MDP). The traditional approach solving this MDP problem involves
+        centralized control with huge complexity. To obtain a distributive and low
+        complexity solution, we introduce a linear structure which approximates the
+        value function of the associated Bellman equation by the sum of per-node value
+        functions. We derive a distributive two-stage two-winner auction-based control
+        policy which is a function of the local CSI and local QSI only. Furthermore, to
+        estimate the best fit approximation parameter, we propose a distributive online
+        stochastic learning algorithm using stochastic approximation theory. Finally,
+        we establish technical conditions for almost-sure convergence and show that
+        under heavy traffic, the proposed low complexity distributive control is global
+        optimal.
+        </summary>
+            <author>
+              <name>Rui Wang</name>
+            </author>
+            <author>
+              <name>Vincent K. N. Lau</name>
+            </author>
+            <author>
+              <name>Ying Cui</name>
+            </author>
+            <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1109/TSP.2010.2086449</arxiv:doi>
+            <link title="doi" href="http://dx.doi.org/10.1109/TSP.2010.2086449" rel="related"/>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30 pages, 7 figures</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.0287v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0287v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="MIMO, relay, queue-aware, distributive resource control" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0520v2</id>
+            <updated>2013-12-11T12:51:40Z</updated>
+            <published>2010-10-04T09:48:16Z</published>
+            <title>Successive normalization of rectangular arrays</title>
+            <summary>  Standard statistical techniques often require transforming data to have mean
+        $0$ and standard deviation $1$. Typically, this process of "standardization" or
+        "normalization" is applied across subjects when each subject produces a single
+        number. High throughput genomic and financial data often come as rectangular
+        arrays where each coordinate in one direction concerns subjects who might have
+        different status (case or control, say), and each coordinate in the other
+        designates "outcome" for a specific feature, for example, "gene," "polymorphic
+        site" or some aspect of financial profile. It may happen, when analyzing data
+        that arrive as a rectangular array, that one requires BOTH the subjects and the
+        features to be "on the same footing." Thus there may be a need to standardize
+        across rows and columns of the rectangular matrix. There arises the question as
+        to how to achieve this double normalization. We propose and investigate the
+        convergence of what seems to us a natural approach to successive normalization
+        which we learned from our colleague Bradley Efron. We also study the
+        implementation of the method on simulated data and also on data that arose from
+        scientific experimentation.
+        </summary>
+            <author>
+              <name>Richard A. Olshen</name>
+            </author>
+            <author>
+              <name>Bala Rajaratnam</name>
+            </author>
+            <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1214/09-AOS743</arxiv:doi>
+            <link title="doi" href="http://dx.doi.org/10.1214/09-AOS743" rel="related"/>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Published in at http://dx.doi.org/10.1214/09-AOS743 the Annals of
+          Statistics (http://www.imstat.org/aos/) by the Institute of Mathematical
+          Statistics (http://www.imstat.org). With Corrections</arxiv:comment>
+            <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Annals of Statistics 2010, Vol. 38, No. 3, 1638-1664</arxiv:journal_ref>
+            <link href="http://arxiv.org/abs/1010.0520v2" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0520v2" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0535v3</id>
+            <updated>2011-04-12T07:08:05Z</updated>
+            <published>2010-10-04T10:46:32Z</published>
+            <title>Asymptotic Normality of Support Vector Machine Variants and Other
+          Regularized Kernel Methods</title>
+            <summary>  In nonparametric classification and regression problems, regularized kernel
+        methods, in particular support vector machines, attract much attention in
+        theoretical and in applied statistics. In an abstract sense, regularized kernel
+        methods (simply called SVMs here) can be seen as regularized M-estimators for a
+        parameter in a (typically infinite dimensional) reproducing kernel Hilbert
+        space. For smooth loss functions, it is shown that the difference between the
+        estimator, i.e.\ the empirical SVM, and the theoretical SVM is asymptotically
+        normal with rate $\sqrt{n}$. That is, the standardized difference converges
+        weakly to a Gaussian process in the reproducing kernel Hilbert space. As common
+        in real applications, the choice of the regularization parameter may depend on
+        the data. The proof is done by an application of the functional delta-method
+        and by showing that the SVM-functional is suitably Hadamard-differentiable.
+        </summary>
+            <author>
+              <name>Robert Hable</name>
+            </author>
+            <link href="http://arxiv.org/abs/1010.0535v3" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0535v3" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="62G08, 62G20, 62M10" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0556v2</id>
+            <updated>2011-03-30T11:24:17Z</updated>
+            <published>2010-10-04T12:04:44Z</published>
+            <title>Regularizers for Structured Sparsity</title>
+            <summary>  We study the problem of learning a sparse linear regression vector under
+        additional conditions on the structure of its sparsity pattern. This problem is
+        relevant in machine learning, statistics and signal processing. It is well
+        known that a linear regression can benefit from knowledge that the underlying
+        regression vector is sparse. The combinatorial problem of selecting the nonzero
+        components of this vector can be "relaxed" by regularizing the squared error
+        with a convex penalty function like the $\ell_1$ norm. However, in many
+        applications, additional conditions on the structure of the regression vector
+        and its sparsity pattern are available. Incorporating this information into the
+        learning method may lead to a significant decrease of the estimation error. In
+        this paper, we present a family of convex penalty functions, which encode prior
+        knowledge on the structure of the vector formed by the absolute values of the
+        regression coefficients. This family subsumes the $\ell_1$ norm and is flexible
+        enough to include different models of sparsity patterns, which are of practical
+        and theoretical importance. We establish the basic properties of these penalty
+        functions and discuss some examples where they can be computed explicitly.
+        Moreover, we present a convergent optimization algorithm for solving
+        regularized least squares with these penalty functions. Numerical simulations
+        highlight the benefit of structured sparsity and the advantage offered by our
+        approach over the Lasso method and other related methods.
+        </summary>
+            <author>
+              <name>Charles A. Micchelli</name>
+            </author>
+            <author>
+              <name>Jean M. Morales</name>
+            </author>
+            <author>
+              <name>Massimiliano Pontil</name>
+            </author>
+            <link href="http://arxiv.org/abs/1010.0556v2" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0556v2" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0609v1</id>
+            <updated>2010-10-04T14:51:58Z</updated>
+            <published>2010-10-04T14:51:58Z</published>
+            <title>Selfish Response to Epidemic Propagation</title>
+            <summary>  An epidemic spreading in a network calls for a decision on the part of the
+        network members: They should decide whether to protect themselves or not. Their
+        decision depends on the trade-off between their perceived risk of being
+        infected and the cost of being protected. The network members can make
+        decisions repeatedly, based on information that they receive about the changing
+        infection level in the network.
+          We study the equilibrium states reached by a network whose members increase
+        (resp. decrease) their security deployment when learning that the network
+        infection is widespread (resp. limited). Our main finding is that the
+        equilibrium level of infection increases as the learning rate of the members
+        increases. We confirm this result in three scenarios for the behavior of the
+        members: strictly rational cost minimizers, not strictly rational, and strictly
+        rational but split into two response classes. In the first two cases, we
+        completely characterize the stability and the domains of attraction of the
+        equilibrium points, even though the first case leads to a differential
+        inclusion. We validate our conclusions with simulations on human mobility
+        traces.
+        </summary>
+            <author>
+              <name>George Theodorakopoulos</name>
+            </author>
+            <author>
+              <name>Jean-Yves Le Boudec</name>
+            </author>
+            <author>
+              <name>John S. Baras</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 5 figures, submitted to the IEEE Transactions on Automatic
+          Control</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.0609v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0609v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="nlin.AO" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0621v2</id>
+            <updated>2011-02-25T21:37:16Z</updated>
+            <published>2010-10-04T15:29:33Z</published>
+            <title>Local Optimality of User Choices and Collaborative Competitive Filtering</title>
+            <summary>  While a user's preference is directly reflected in the interactive choice
+        process between her and the recommender, this wealth of information was not
+        fully exploited for learning recommender models. In particular, existing
+        collaborative filtering (CF) approaches take into account only the binary
+        events of user actions but totally disregard the contexts in which users'
+        decisions are made. In this paper, we propose Collaborative Competitive
+        Filtering (CCF), a framework for learning user preferences by modeling the
+        choice process in recommender systems. CCF employs a multiplicative latent
+        factor model to characterize the dyadic utility function. But unlike CF, CCF
+        models the user behavior of choices by encoding a local competition effect. In
+        this way, CCF allows us to leverage dyadic data that was previously lumped
+        together with missing data in existing CF models. We present two formulations
+        and an efficient large scale optimization algorithm. Experiments on three
+        real-world recommendation data sets demonstrate that CCF significantly
+        outperforms standard CF approaches in both offline and online evaluations.
+        </summary>
+            <author>
+              <name>Shuang Hong Yang</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">27 pages, 4 figure</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.0621v2" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0621v2" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="I.2.6; H.1.1; H.3.3" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0703v2</id>
+            <updated>2011-04-27T03:52:25Z</updated>
+            <published>2010-10-04T20:49:15Z</published>
+            <title>Implementing regularization implicitly via approximate eigenvector
+          computation</title>
+            <summary>  Regularization is a powerful technique for extracting useful information from
+        noisy data. Typically, it is implemented by adding some sort of norm constraint
+        to an objective function and then exactly optimizing the modified objective
+        function. This procedure often leads to optimization problems that are
+        computationally more expensive than the original problem, a fact that is
+        clearly problematic if one is interested in large-scale applications. On the
+        other hand, a large body of empirical work has demonstrated that heuristics,
+        and in some cases approximation algorithms, developed to speed up computations
+        sometimes have the side-effect of performing regularization implicitly. Thus,
+        we consider the question: What is the regularized optimization objective that
+        an approximation algorithm is exactly optimizing?
+          We address this question in the context of computing approximations to the
+        smallest nontrivial eigenvector of a graph Laplacian; and we consider three
+        random-walk-based procedures: one based on the heat kernel of the graph, one
+        based on computing the the PageRank vector associated with the graph, and one
+        based on a truncated lazy random walk. In each case, we provide a precise
+        characterization of the manner in which the approximation method can be viewed
+        as implicitly computing the exact solution to a regularized problem.
+        Interestingly, the regularization is not on the usual vector form of the
+        optimization problem, but instead it is on a related semidefinite program.
+        </summary>
+            <author>
+              <name>Michael W. Mahoney</name>
+            </author>
+            <author>
+              <name>Lorenzo Orecchia</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages; a few clarifications</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.0703v2" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0703v2" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.CO" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0772v1</id>
+            <updated>2010-10-05T06:03:09Z</updated>
+            <published>2010-10-05T06:03:09Z</published>
+            <title>A bagging SVM to learn from positive and unlabeled examples</title>
+            <summary>  We consider the problem of learning a binary classifier from a training set
+        of positive and unlabeled examples, both in the inductive and in the
+        transductive setting. This problem, often referred to as \emph{PU learning},
+        differs from the standard supervised classification problem by the lack of
+        negative examples in the training set. It corresponds to an ubiquitous
+        situation in many applications such as information retrieval or gene ranking,
+        when we have identified a set of data of interest sharing a particular
+        property, and we wish to automatically retrieve additional data sharing the
+        same property among a large and easily available pool of unlabeled data. We
+        propose a conceptually simple method, akin to bagging, to approach both
+        inductive and transductive PU learning problems, by converting them into series
+        of supervised binary classification problems discriminating the known positive
+        examples from random subsamples of the unlabeled set. We empirically
+        demonstrate the relevance of the method on simulated and real data, where it
+        performs at least as well as existing methods while being faster.
+        </summary>
+            <author>
+              <name>Fantine Mordelet</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CBIO</arxiv:affiliation>
+            </author>
+            <author>
+              <name>Jean-Philippe Vert</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CBIO</arxiv:affiliation>
+            </author>
+            <link href="http://arxiv.org/abs/1010.0772v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0772v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.0789v2</id>
+            <updated>2011-03-02T08:12:24Z</updated>
+            <published>2010-10-05T08:00:33Z</published>
+            <title>Estimation of low-rank tensors via convex optimization</title>
+            <summary>  In this paper, we propose three approaches for the estimation of the Tucker
+        decomposition of multi-way arrays (tensors) from partial observations. All
+        approaches are formulated as convex minimization problems. Therefore, the
+        minimum is guaranteed to be unique. The proposed approaches can automatically
+        estimate the number of factors (rank) through the optimization. Thus, there is
+        no need to specify the rank beforehand. The key technique we employ is the
+        trace norm regularization, which is a popular approach for the estimation of
+        low-rank matrices. In addition, we propose a simple heuristic to improve the
+        interpretability of the obtained factorization. The advantages and
+        disadvantages of three proposed approaches are demonstrated through numerical
+        experiments on both synthetic and real world datasets. We show that the
+        proposed convex optimization based approaches are more accurate in predictive
+        performance, faster, and more reliable in recovering a known multilinear
+        structure than conventional approaches.
+        </summary>
+            <author>
+              <name>Ryota Tomioka</name>
+            </author>
+            <author>
+              <name>Kohei Hayashi</name>
+            </author>
+            <author>
+              <name>Hisashi Kashima</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 7 figures</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.0789v2" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.0789v2" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1042v3</id>
+            <updated>2011-05-05T08:34:07Z</updated>
+            <published>2010-10-06T00:36:04Z</published>
+            <title>Hidden Markov Models with Multiple Observation Processes</title>
+            <summary>  We consider a hidden Markov model with multiple observation processes, one of
+        which is chosen at each point in time by a policy---a deterministic function of
+        the information state---and attempt to determine which policy minimises the
+        limiting expected entropy of the information state. Focusing on a special case,
+        we prove analytically that the information state always converges in
+        distribution, and derive a formula for the limiting entropy which can be used
+        for calculations with high precision. Using this fomula, we find
+        computationally that the optimal policy is always a threshold policy, allowing
+        it to be easily found. We also find that the greedy policy is almost optimal.
+        </summary>
+            <author>
+              <name>James Y. Zhao</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Masters Thesis, 79 pages</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1042v3" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1042v3" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="90C40" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1409v1</id>
+            <updated>2010-10-07T12:12:13Z</updated>
+            <published>2010-10-07T12:12:13Z</published>
+            <title>A sparse regulatory network of copy-number driven expression reveals
+          putative breast cancer oncogenes</title>
+            <summary>  The influence of DNA cis-regulatory elements on a gene's expression has been
+        intensively studied. However, little is known about expressions driven by
+        trans-acting DNA hotspots. DNA hotspots harboring copy number aberrations are
+        recognized to be important in cancer as they influence multiple genes on a
+        global scale. The challenge in detecting trans-effects is mainly due to the
+        computational difficulty in detecting weak and sparse trans-acting signals
+        amidst co-occuring passenger events. We propose an integrative approach to
+        learn a sparse interaction network of DNA copy-number regions with their
+        downstream targets in a breast cancer dataset. Information from this network
+        helps distinguish copy-number driven from copy-number independent expression
+        changes on a global scale. Our result further delineates cis- and trans-effects
+        in a breast cancer dataset, for which important oncogenes such as ESR1 and
+        ERBB2 appear to be highly copy-number dependent. Further, our model is shown to
+        be efficient and in terms of goodness of fit no worse than other state-of the
+        art predictors and network reconstruction models using both simulated and real
+        data.
+        </summary>
+            <author>
+              <name>Yinyin Yuan</name>
+            </author>
+            <author>
+              <name>Christina Curtis</name>
+            </author>
+            <author>
+              <name>Carlos Caldas</name>
+            </author>
+            <author>
+              <name>Florian Markowetz</name>
+            </author>
+            <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1109/BIBM.2010.5706612</arxiv:doi>
+            <link title="doi" href="http://dx.doi.org/10.1109/BIBM.2010.5706612" rel="related"/>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at IEEE International Conference on Bioinformatics &amp;
+          Biomedicine (BIBM 2010)</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1409v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1409v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.MN" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="q-bio.MN" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1437v1</id>
+            <updated>2010-10-07T14:16:38Z</updated>
+            <published>2010-10-07T14:16:38Z</published>
+            <title>Mixed-Membership Stochastic Block-Models for Transactional Networks</title>
+            <summary>  Transactional network data can be thought of as a list of one-to-many
+        communications(e.g., email) between nodes in a social network. Most social
+        network models convert this type of data into binary relations between pairs of
+        nodes. We develop a latent mixed membership model capable of modeling richer
+        forms of transactional network data, including relations between more than two
+        nodes. The model can cluster nodes and predict transactions. The block-model
+        nature of the model implies that groups can be characterized in very general
+        ways. This flexible notion of group structure enables discovery of rich
+        structure in transactional networks. Estimation and inference are accomplished
+        via a variational EM algorithm. Simulations indicate that the learning
+        algorithm can recover the correct generative model. Interesting structure is
+        discovered in the Enron email dataset and another dataset extracted from the
+        Reddit website. Analysis of the Reddit data is facilitated by a novel
+        performance measure for comparing two soft clusterings. The new model is
+        superior at discovering mixed membership in groups and in predicting
+        transactions.
+        </summary>
+            <author>
+              <name>Mahdi Shafiei</name>
+            </author>
+            <author>
+              <name>Hugh Chipman</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">22 pages</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1437v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1437v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1499v3</id>
+            <updated>2012-06-29T16:38:17Z</updated>
+            <published>2010-10-07T18:00:46Z</published>
+            <title>Completely Stale Transmitter Channel State Information is Still Very
+          Useful</title>
+            <summary>  Transmitter channel state information (CSIT) is crucial for the multiplexing
+        gains offered by advanced interference management techniques such as multiuser
+        MIMO and interference alignment. Such CSIT is usually obtained by feedback from
+        the receivers, but the feedback is subject to delays. The usual approach is to
+        use the fed back information to predict the current channel state and then
+        apply a scheme designed assuming perfect CSIT. When the feedback delay is large
+        compared to the channel coherence time, such a prediction approach completely
+        fails to achieve any multiplexing gain. In this paper, we show that even in
+        this case, the completely stale CSI is still very useful. More concretely, we
+        show that in a MIMO broadcast channel with $K$ transmit antennas and $K$
+        receivers each with 1 receive antenna, $\frac{K}{1+1/2+ ...+ \frac{1}{K}} (&gt; 1)
+        $ degrees of freedom is achievable even when the fed back channel state is
+        completely independent of the current channel state. Moreover, we establish
+        that if all receivers have independent and identically distributed channels,
+        then this is the optimal number of degrees of freedom achievable. In the
+        optimal scheme, the transmitter uses the fed back CSI to learn the side
+        information that the receivers receive from previous transmissions rather than
+        to predict the current channel state. Our result can be viewed as the first
+        example of feedback providing a degree-of-freedom gain in memoryless channels.
+        </summary>
+            <author>
+              <name>Mohammad Ali Maddah-Ali</name>
+            </author>
+            <author>
+              <name>David Tse</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Initially reported as Technical Report No. UCB/EECS-2010-122 at the
+          University of California--Berkeley, Sept. 6, 2010. Presented at the
+          Forty-Eighth Annual Allerton Conference, Sept. 2010. Accepted for IEEE
+          Transactions on Information Theory</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1499v3" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1499v3" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1526v6</id>
+            <updated>2012-07-02T20:57:01Z</updated>
+            <published>2010-10-07T19:48:23Z</published>
+            <title>Time Series Classification by Class-Specific Mahalanobis Distance
+          Measures</title>
+            <summary>  To classify time series by nearest neighbors, we need to specify or learn one
+        or several distance measures. We consider variations of the Mahalanobis
+        distance measures which rely on the inverse covariance matrix of the data.
+        Unfortunately --- for time series data --- the covariance matrix has often low
+        rank. To alleviate this problem we can either use a pseudoinverse, covariance
+        shrinking or limit the matrix to its diagonal. We review these alternatives and
+        benchmark them against competitive methods such as the related Large Margin
+        Nearest Neighbor Classification (LMNN) and the Dynamic Time Warping (DTW)
+        distance. As we expected, we find that the DTW is superior, but the Mahalanobis
+        distance measures are one to two orders of magnitude faster. To get best
+        results with Mahalanobis distance measures, we recommend learning one distance
+        measure per class using either covariance shrinking or the diagonal approach.
+        </summary>
+            <author>
+              <name>Zoltán Prekopcsák</name>
+            </author>
+            <author>
+              <name>Daniel Lemire</name>
+            </author>
+            <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1007/s11634-012-0110-6</arxiv:doi>
+            <link title="doi" href="http://dx.doi.org/10.1007/s11634-012-0110-6" rel="related"/>
+            <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Advances in Data Analysis and Classification 6 (3), 2012</arxiv:journal_ref>
+            <link href="http://arxiv.org/abs/1010.1526v6" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1526v6" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1609v1</id>
+            <updated>2010-10-08T07:02:11Z</updated>
+            <published>2010-10-08T07:02:11Z</published>
+            <title>Algorithmic and Statistical Perspectives on Large-Scale Data Analysis</title>
+            <summary>  In recent years, ideas from statistics and scientific computing have begun to
+        interact in increasingly sophisticated and fruitful ways with ideas from
+        computer science and the theory of algorithms to aid in the development of
+        improved worst-case algorithms that are useful for large-scale scientific and
+        Internet data analysis problems. In this chapter, I will describe two recent
+        examples---one having to do with selecting good columns or features from a (DNA
+        Single Nucleotide Polymorphism) data matrix, and the other having to do with
+        selecting good clusters or communities from a data graph (representing a social
+        or information network)---that drew on ideas from both areas and that may serve
+        as a model for exploiting complementary algorithmic and statistical
+        perspectives in order to solve applied large-scale data analysis problems.
+        </summary>
+            <author>
+              <name>Michael W. Mahoney</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">33 pages. To appear in Uwe Naumann and Olaf Schenk, editors,
+          "Combinatorial Scientific Computing," Chapman and Hall/CRC Press, 2011</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1609v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1609v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.CO" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1763v3</id>
+            <updated>2011-03-08T12:56:39Z</updated>
+            <published>2010-10-08T18:53:27Z</published>
+            <title>Algorithms for nonnegative matrix factorization with the beta-divergence</title>
+            <summary>  This paper describes algorithms for nonnegative matrix factorization (NMF)
+        with the beta-divergence (beta-NMF). The beta-divergence is a family of cost
+        functions parametrized by a single shape parameter beta that takes the
+        Euclidean distance, the Kullback-Leibler divergence and the Itakura-Saito
+        divergence as special cases (beta = 2,1,0, respectively). The proposed
+        algorithms are based on a surrogate auxiliary function (a local majorization of
+        the criterion function). We first describe a majorization-minimization (MM)
+        algorithm that leads to multiplicative updates, which differ from standard
+        heuristic multiplicative updates by a beta-dependent power exponent. The
+        monotonicity of the heuristic algorithm can however be proven for beta in (0,1)
+        using the proposed auxiliary function. Then we introduce the concept of
+        majorization-equalization (ME) algorithm which produces updates that move along
+        constant level sets of the auxiliary function and lead to larger steps than MM.
+        Simulations on synthetic and real data illustrate the faster convergence of the
+        ME approach. The paper also describes how the proposed algorithms can be
+        adapted to two common variants of NMF : penalized NMF (i.e., when a penalty
+        function of the factors is added to the criterion function) and convex-NMF
+        (when the dictionary is assumed to belong to a known subspace).
+        </summary>
+            <author>
+              <name>Cédric Févotte</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">LTCI</arxiv:affiliation>
+            </author>
+            <author>
+              <name>Jérôme Idier</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">IRCCyN</arxiv:affiliation>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">\`a para\^itre dans Neural Computation</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1763v3" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1763v3" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1868v1</id>
+            <updated>2010-10-09T19:43:56Z</updated>
+            <published>2010-10-09T19:43:56Z</published>
+            <title>Infinite Hierarchical MMSB Model for Nested Communities/Groups in Social
+          Networks</title>
+            <summary>  Actors in realistic social networks play not one but a number of diverse
+        roles depending on whom they interact with, and a large number of such
+        role-specific interactions collectively determine social communities and their
+        organizations. Methods for analyzing social networks should capture these
+        multi-faceted role-specific interactions, and, more interestingly, discover the
+        latent organization or hierarchy of social communities. We propose a
+        hierarchical Mixed Membership Stochastic Blockmodel to model the generation of
+        hierarchies in social communities, selective membership of actors to subsets of
+        these communities, and the resultant networks due to within- and
+        cross-community interactions. Furthermore, to automatically discover these
+        latent structures from social networks, we develop a Gibbs sampling algorithm
+        for our model. We conduct extensive validation of our model using synthetic
+        networks, and demonstrate the utility of our model in real-world datasets such
+        as predator-prey networks and citation networks.
+        </summary>
+            <author>
+              <name>Qirong Ho</name>
+            </author>
+            <author>
+              <name>Ankur P. Parikh</name>
+            </author>
+            <author>
+              <name>Le Song</name>
+            </author>
+            <author>
+              <name>Eric P. Xing</name>
+            </author>
+            <link href="http://arxiv.org/abs/1010.1868v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1868v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.1888v1</id>
+            <updated>2010-10-10T02:34:22Z</updated>
+            <published>2010-10-10T02:34:22Z</published>
+            <title>Multi-Objective Genetic Programming Projection Pursuit for Exploratory
+          Data Modeling</title>
+            <summary>  For classification problems, feature extraction is a crucial process which
+        aims to find a suitable data representation that increases the performance of
+        the machine learning algorithm. According to the curse of dimensionality
+        theorem, the number of samples needed for a classification task increases
+        exponentially as the number of dimensions (variables, features) increases. On
+        the other hand, it is costly to collect, store and process data. Moreover,
+        irrelevant and redundant features might hinder classifier performance. In
+        exploratory analysis settings, high dimensionality prevents the users from
+        exploring the data visually. Feature extraction is a two-step process: feature
+        construction and feature selection. Feature construction creates new features
+        based on the original features and feature selection is the process of
+        selecting the best features as in filter, wrapper and embedded methods.
+          In this work, we focus on feature construction methods that aim to decrease
+        data dimensionality for visualization tasks. Various linear (such as principal
+        components analysis (PCA), multiple discriminants analysis (MDA), exploratory
+        projection pursuit) and non-linear (such as multidimensional scaling (MDS),
+        manifold learning, kernel PCA/LDA, evolutionary constructive induction)
+        techniques have been proposed for dimensionality reduction. Our algorithm is an
+        adaptive feature extraction method which consists of evolutionary constructive
+        induction for feature construction and a hybrid filter/wrapper method for
+        feature selection.
+        </summary>
+            <author>
+              <name>Ilknur Icke</name>
+            </author>
+            <author>
+              <name>Andrew Rosenberg</name>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Submitted to the New York Academy of Sciences, 5th Annual Machine
+          Learning Symposium</arxiv:comment>
+            <link href="http://arxiv.org/abs/1010.1888v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.1888v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.2102v1</id>
+            <updated>2010-10-11T13:41:21Z</updated>
+            <published>2010-10-11T13:41:21Z</published>
+            <title>Hierarchical Multiclass Decompositions with Application to Authorship
+          Determination</title>
+            <summary>  This paper is mainly concerned with the question of how to decompose
+        multiclass classification problems into binary subproblems. We extend known
+        Jensen-Shannon bounds on the Bayes risk of binary problems to hierarchical
+        multiclass problems and use these bounds to develop a heuristic procedure for
+        constructing hierarchical multiclass decomposition for multinomials. We test
+        our method and compare it to the well known "all-pairs" decomposition. Our
+        tests are performed using a new authorship determination benchmark test of
+        machine learning authors. The new method consistently outperforms the all-pairs
+        decomposition when the number of classes is small and breaks even on larger
+        multiclass problems. Using both methods, the classification accuracy we
+        achieve, using an SVM over a feature set consisting of both high frequency
+        single tokens and high frequency token-pairs, appears to be exceptionally high
+        compared to known results in authorship determination.
+        </summary>
+            <author>
+              <name>Ran El-Yaniv</name>
+            </author>
+            <author>
+              <name>Noam Etzion-Rosenberg</name>
+            </author>
+            <link href="http://arxiv.org/abs/1010.2102v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.2102v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+          <entry>
+            <id>http://arxiv.org/abs/1010.2138v1</id>
+            <updated>2010-10-11T15:34:46Z</updated>
+            <published>2010-10-11T15:34:46Z</published>
+            <title>Combiner suivi de l'activite? et partage d'expériences en
+          apprentissage par projet pour les acteurs tuteurs et apprenants</title>
+            <summary>  Our work aims to study tools offered to students and tutors involved in
+        face-to-face or blended project- based learning activities. Project-based
+        learning is often applied in the case of complex learning (i.e. which aims at
+        making learners acquire various linked skills or develop their behaviours). In
+        comparison to traditional learning, this type of learning relies on
+        co-development, collective responsibility and co-operation. Learners are the
+        principal actors of their learning. These trainings rest on rich and complex
+        organizations, particularly for tutors, and it is difficult to apply innovative
+        educational strategies. Our aim, in a bottom-up approach, is (1) to observe,
+        according to Knowledge Management methods, a course characterized by these
+        three criteria. The observed course concerns project management learning. Its
+        observation allows us (2) to highlight and to analyze the problems encountered
+        by the actors (students, tutors, designers) and (3) to propose tools to solve
+        or improve them. We particularly study the relevance and the limits of the
+        existing monitoring and experience sharing tools. We finally propose a result
+        in the form of the tool MEShaT (Monitoring and Experience Sharing Tool) and end
+        on the perspectives offered by these researches.
+        </summary>
+            <author>
+              <name>Christine Michel</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">LIESP</arxiv:affiliation>
+            </author>
+            <author>
+              <name>Elise Lavoué</name>
+              <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">SICOMOR</arxiv:affiliation>
+            </author>
+            <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8p</arxiv:comment>
+            <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">7\`eme Colloque Technologies de l'Information et de la
+          Communication pour l'Enseignement (TICE 2010), Nancy : France (2010)</arxiv:journal_ref>
+            <link href="http://arxiv.org/abs/1010.2138v1" rel="alternate" type="text/html"/>
+            <link title="pdf" href="http://arxiv.org/pdf/1010.2138v1" rel="related" type="application/pdf"/>
+            <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+            <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+          </entry>
+        </feed>
+  recorded_at: Sun, 12 Oct 2025 07:21:40 GMT
+- request:
+    method: get
+    uri: https://export.arxiv.org/api/search_query=all:Reinforcement+Learning+AND+submittedDate:%5B201010020000+TO+202510020000%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=ascending
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - application/atom+xml
+      User-Agent:
+      - Sangria/1.0 (mailto:sharonlin@iss.nthu.edu.tw)
+      Connection:
+      - close
+      Host:
+      - export.arxiv.org
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '126'
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 12 Oct 2025 16:22:51 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-nrt-rjtt7900030-NRT
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1760286171.532799,VS0,VE599
+      Strict-Transport-Security:
+      - max-age=300
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="UTF-8">
+            <title>503</title>
+          </head>
+          <body>
+            503
+          </body>
+        </html>
+  recorded_at: Sun, 12 Oct 2025 16:22:52 GMT
+recorded_with: VCR 6.3.1
