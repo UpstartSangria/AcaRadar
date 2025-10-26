@@ -50,4 +50,4 @@ module DatabaseHelper
       AcaRadar::Database::CategoryOrm.dataset.delete
     end
   end
-  
+end
