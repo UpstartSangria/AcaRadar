@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rake/testtask'
+require 'rspec/core/rake_task'
 require_relative 'require_app'
 
 CODE = 'app/'
@@ -9,26 +9,24 @@ task :run do
   sh 'bundle exec puma'
 end
 
-task :default do
-  puts `rake -T`
+# Run all specs under spec/
+desc 'Run all RSpec tests'
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.pattern = 'spec/**/*_spec.rb'
+  t.rspec_opts = ['--format documentation']
 end
 
-desc 'Run tests once'
-Rake::TestTask.new(:spec) do |t|
-  t.pattern = 'spec/*_spec.rb'
-  t.warning = false
-end
+task :default => :spec
 
 namespace :db do
   task :config do
     require 'sequel'
     require_relative 'config/environment'
-    # require_relative 'spec/helpers/database_helper'
 
     def app = AcaRadar::App
   end
 
-  desc 'Run migraiton'
+  desc 'Run migration'
   task migrate: :config do
     Sequel.extension :migration
     puts "Migrating #{app.environment} database to latest"
@@ -43,6 +41,7 @@ namespace :db do
     end
 
     require_app(%w[models infrastructure])
+    require_relative 'spec/helpers/database_helper'
     DatabaseHelper.wipe_database
   end
 
@@ -86,7 +85,7 @@ namespace :quality do
     sh 'reek'
   end
 
-  desc 'complexiy analysis'
+  desc 'complexity analysis'
   task :flog do
     sh "flog #{CODE}"
   end

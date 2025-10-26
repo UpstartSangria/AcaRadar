@@ -8,6 +8,7 @@ gem 'figaro', '~> 1.0'
 # Global Debugging
 gem 'pry'
 gem 'rake'
+gem 'rspec'
 
 # Database
 gem 'hirb'
