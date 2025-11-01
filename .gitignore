@@ -3,5 +3,5 @@ Gemfile.lock
 coverage/*
 !coverage/.resultset.json
 *.db
-.venv
+.venv/
 .bundle/

@@ -1,4 +1,12 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
-sentence-transformers
 torch==2.7.0+cpu
 torchvision==0.22.0
+
+numpy==1.26.4 # breaks with newer version
+torch==2.2.2
+transformers==4.43.3
+sentence-transformers==2.7.0
+keybert==0.8.4
+scikit-learn==1.5.1
+nltk==3.8.1
+spacy==3.7.4
